@@ -1,0 +1,200 @@
+/* Main page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fascinate', cursive;
+    text-align: center;
+    font-size: 15px;
+    background: #FFF89A;
+    color: #3763b1;
+}
+
+.toggle {
+    float: right;
+    right: 2%;
+    top: 4%;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #FFF89A;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle span {
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    border-radius: 5px;
+    background: #9ADCFF;
+    transition: 0.5s;
+    right: 20%;
+    top: 45%;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-20px);
+    width: 49px;
+}
+
+.toggle.active span:nth-child(1) {
+    width: 70px;
+    transform: translateY(0) rotate(45deg);
+    background: #5ab6e7;
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(20px);
+    width: 49px;
+}
+
+.toggle.active span:nth-child(2) {
+    width: 70px;
+    transform: translateY(0) rotate(315deg);
+    background: #5ab6e7;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(100px);
+    background: #5ab6e7;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    width: 94%;
+    top: 12%;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+/* .nav-transform {
+    transition: all 1s;
+} */
+
+.title {
+    font-size: 8em;
+    font-family: 'Fascinate Inline', cursive;
+    color: #FF8AAE;
+    margin: 20vh auto 15vh auto;
+}
+
+.container-labels, .display-container-labels {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.display-container-labels {
+    font-size: 3.5em;
+}
+
+.container-amounts, .amount-container, .pallete, .display-amount-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 25vw;
+    border: 5px solid #9ADCFF;
+    border-radius: 5px;
+}
+
+.display-amount-container {
+    height: 30vh;
+    width: 35vw;
+}
+
+.display-containers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+.display-floz-amount {
+    height: 25vh;
+    width: 30vw;
+    color: rgb(117,117,117);
+}
+
+ .amount-container {
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.milk-amount-containers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.floz-ammount, .display-floz-ammount {
+    font-size: 4em;
+    border-radius: 5px;
+    height: 18vh;
+    width: 24.25vw;
+    background: #C2DED1;
+    border: none;
+}
+
+.display-floz-ammount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28vh;
+    width: 34.25vw;
+    font-size: 4em;
+    color: rgb(117,117,117);
+}
+
+.submit-btn {
+    height: 5vh;
+    width: 25.5vw;
+    background: #FF8AAE;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-family: 'Fascinate', cursive;
+}
+
+.submit-btn:hover {
+    background: #FFB2A6;
+    color: #9ADCFF;
+}
+
+.milk-amount-containers {
+    margin-bottom: 15vh;
+}
+
+/* Pallete */
+.pallete {
+    height: 20vh;
+    width: 100%;
+    border: 5px solid black;
+    background: linear-gradient(90deg,#FF8AAE,#FFB2A6,#FFF89A,#9ADCFF);
+}
+
+/* Quotes page */
+
+.list-of-quotes {
+    text-align: left;
+    line-height: 2;
+    list-style: none;
+}
+
+/* Old WIves Tales page */
+
+.myths-facts-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
