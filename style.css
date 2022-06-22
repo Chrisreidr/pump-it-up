@@ -153,6 +153,10 @@ body {
     height: 8vh;
 }
 
+.time-floz-amount {
+    font-size: 3em;
+}
+
 .baby-ate-container {
     display: flex;
     flex-direction: column;
@@ -208,8 +212,9 @@ body {
 hr {
     border-style: dotted none none;
     border-width: 15px;
-    width: 5%;
-    margin: 10vh auto;
+    width: 10%;
+    margin: 5vh auto;
+    color: #FFF89A;
 }
 
 .display-date {
@@ -264,22 +269,25 @@ hr {
 .display-feeding-border, .display-time-border {
     width: 25vw;
     height: 20vh;
-    border: 5px solid #FFF89A;
+    border: 10px solid #FFF89A;
     border-radius: 5px;
     margin-bottom: 15vh;
 }
 
-.display-feeding-log, .display-time-log {
+.display-time-border {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+}
+
+.display-feeding-log, .display-time-log {
+    font-size: 4em;
     color: rgb(117,117,117);
 }
 
 .display-log-titles {
-    font-size: 4em;
-    margin-bottom: 5vh;
+    font-size: 5em;
+    margin-bottom: 2.5vh;
 }
 
 /* Pallete */
