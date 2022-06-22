@@ -1,4 +1,5 @@
 /* Main page */
+
 * {
     margin: 0;
     padding: 0;
@@ -269,8 +270,8 @@ hr {
 .display-feeding-border, .display-time-border {
     width: 25vw;
     height: 20vh;
-    border: 10px solid #FFF89A;
-    border-radius: 5px;
+    border: 15px solid #FFF89A;
+    border-radius: 50%;
     margin-bottom: 15vh;
 }
 
