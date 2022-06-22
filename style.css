@@ -145,7 +145,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 27vh;
-    width: 33vw;
+    width: 33.25vw;
     color: rgb(117,117,117);
 }
 
@@ -185,6 +185,101 @@ body {
 
 .milk-amount-containers {
     margin-bottom: 15vh;
+}
+
+.top-transition {
+    height: 5vh;
+    width: 100%;
+    background: linear-gradient(#FFF89A,#9ADCFF)
+}
+
+/* Middle container */
+
+.title-feeding-schedule {
+    padding-top: 10vh;
+    font-size: 6em;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.middle-container {
+    background: #9ADCFF;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 15px;
+    width: 5%;
+    margin: 10vh auto;
+}
+
+.display-date {
+    font-size: 3em;
+}
+
+/* Clock */
+
+.clock {
+    width: 20rem;
+    height: 20rem;
+    border: 15px solid #FF8AAE;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    background: #FFF89A;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 3, 0.57, 1);
+  }
+
+/* Logs */
+
+.daily-logs {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.display-feeding-border, .display-time-border {
+    width: 25vw;
+    height: 20vh;
+    border: 5px solid #FFF89A;
+    border-radius: 5px;
+    margin-bottom: 15vh;
+}
+
+.display-feeding-log, .display-time-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: rgb(117,117,117);
+}
+
+.display-log-titles {
+    font-size: 4em;
+    margin-bottom: 5vh;
 }
 
 /* Pallete */
