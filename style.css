@@ -220,6 +220,7 @@ hr {
 
 .display-date {
     font-size: 3em;
+    color: #FFF89A;
 }
 
 /* Clock */
@@ -259,6 +260,11 @@ hr {
     transition-timing-function: cubic-bezier(0, 3, 0.57, 1);
   }
 
+  .hour-hand {
+    width: 5vw;
+    left: 3vw;
+  }
+
 /* Logs */
 
 .daily-logs {
@@ -282,12 +288,12 @@ hr {
 }
 
 .display-feeding-log, .display-time-log {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(117,117,117);
 }
 
 .display-log-titles {
-    font-size: 5em;
+    font-size: 4em;
     margin-bottom: 2.5vh;
 }
 
